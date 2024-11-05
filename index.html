@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe os Países</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Qual é o país desta bandeira?</h1>
+        <div id="butts">
+            <img id="flagImage" alt="Bandeira do país" style="display: none;">
+            <div id="options"></div>
+        </div>
+        <div id="result"></div>
+        <button id="nextButton" style="display:none;">Próximo</button>
+        <!-- Contador de Tentativas, Acertos e Erros -->
+        <div class="counters">
+            <div id="acertos">Acertos: 0</div>
+            <div id="erros">Erros: 0</div>
+            <div id="tentativas">Tentativas: 0</div>
+        </div>
+    </div>
+    <div id="sons">
+        <audio id="taCerto">
+            <source src="./assets/audio/SERTO.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="taErrado">
+            <source src="./assets/audio/ERRADO.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
